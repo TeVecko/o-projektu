@@ -1,0 +1,37 @@
+body {
+  max-width: 120vmin;
+  margin: 40px auto;
+}
+
+.menu {
+  background-color: #56d24b;
+  height: 3em;
+  border-radius: 10px;
+}
+
+.odkazy {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.odkazy li {
+  display: inline-block;
+}
+
+.odkazy a {
+  display: block;
+  padding: 0.9em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+.odkazy a:hover {
+  background-color: #3f9a37;
+  border-radius: 10px;
+}
