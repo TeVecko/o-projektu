@@ -1,12 +1,11 @@
 body {
-  max-width: 120vmin;
-  margin: 40px auto;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
 }
 
 .menu {
-  background-color: #56d24b;
-  height: 3em;
-  border-radius: 10px;
+  background-color: #2a3d28;
+  height: 4rem;
 }
 
 .odkazy {
@@ -22,16 +21,88 @@ body {
 
 .odkazy a {
   display: block;
-  padding: 0.9em;
+  padding: 1.5rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   font-family: sans-serif;
-  color: black;
-  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 0.8rem;
 }
 
-.odkazy a:hover {
-  background-color: #3f9a37;
-  border-radius: 10px;
+.odkazy__span {
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid transparent;
+}
+
+.odkazy__span:hover {
+  border-bottom: 1px solid white;
+}
+
+.foto-element {
+  background-image: url(images/sigmund-DdSKW263jXo-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('images/sigmund-DdSKW263jXo-unsplash.jpg');
+  width: 100%;
+  height: 400px;
+}
+
+.foto-element__nadpis {
+  margin: 0;
+  padding-top: 145px;
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.popis-projektu__nadpis {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+.popis-projektu__text {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 425px) {
+  .odkazy a {
+    font-size: 1rem;
+  }
+
+  .foto-element__nadpis {
+    padding-top: 120px;
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .odkazy {
+    justify-content: flex-start;
+  }
+
+  .odkazy li {
+    padding-right: 2rem;
+  }
+
+  .popis-projektu__nadpis {
+    position: relative;
+  }
+
+  .popis-projektu__nadpis:after {
+    content: '';
+    height: 2px;
+    width: 200px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #84c07f;
+  }
 }
