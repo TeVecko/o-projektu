@@ -70,6 +70,24 @@ body {
   font-size: 1.3rem;
 }
 
+.popis-veckova {
+  display: flex;
+}
+
+.foto-veckova {
+  width: 20rem;
+  margin: 4rem 3rem 4rem 5rem;
+  border-radius: 50%;
+  border: 5px double #2a3d28;
+}
+
+.text-veckova {
+  width: 36rem;
+  margin: 4rem 3rem 4rem 4rem;
+  padding: 5rem 0;
+  font-size: 1.2rem;
+}
+
 @media (min-width: 425px) {
   .odkazy a {
     font-size: 1rem;
