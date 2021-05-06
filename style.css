@@ -68,24 +68,35 @@ body {
 .popis-projektu__text {
   text-align: center;
   font-size: 1.3rem;
+  width: 80vw;
+  line-height: 1.5;
 }
 
-.popis-veckova {
+.popis-veckova,
+.popis-sudikova {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
 }
 
-.foto-veckova {
-  width: 20rem;
-  margin: 4rem 3rem 4rem 5rem;
+.foto-veckova,
+.foto-sudikova {
+  width: 16rem;
+  height: 16rem;
   border-radius: 50%;
-  border: 5px double #2a3d28;
 }
 
-.text-veckova {
-  width: 36rem;
-  margin: 4rem 3rem 4rem 4rem;
-  padding: 5rem 0;
-  font-size: 1.2rem;
+.text-veckova,
+.text-sudikova {
+  width: 80vw;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.jmeno {
+  margin: 2rem 0 0 0;
 }
 
 @media (min-width: 425px) {
