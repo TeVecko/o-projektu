@@ -65,11 +65,16 @@ body {
   margin: 3rem;
 }
 
-.popis-projektu__text {
-  text-align: center;
+.popis-projektu__text1,
+.popis-projektu__text2 {
+  margin: 0 auto 2rem;
   font-size: 1.3rem;
   width: 80vw;
   line-height: 1.5;
+}
+
+.popis-projektu__text1 {
+  text-align: center;
 }
 
 .popis-veckova,
